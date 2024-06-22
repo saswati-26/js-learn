@@ -157,3 +157,39 @@ Some Range of Primitive DataType:
         Represents large integers that cannot be represented by the Number type.
         The range is practically unlimited and depends on available memory.
 */
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+/*
+Memory:
+-----------
+
+1. Stack (Primitive) - here a copied version of data is provided and chnges are made in the copied data and the original data is remained unchanged
+
+2. Heap (Non- Primitive) - here the reference of the original data is provided and the original data is manipulated since no copied data is provided
+ */
+
+let myName = "Disha" // stack
+let anotherName = myName //stack
+anotherName = "Puchuu" //stack
+
+console.log(myName);  // Disha
+console.log(anotherName); // Puchuu
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+} // heap
+
+let userTwo = userOne
+userTwo.email = "puchu@gmail.com" // both changed
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+/*
+stack : variable declared
+heap : value taken from
+*/
