@@ -131,5 +131,5 @@ const myn2 = myArray.splice(1, 3)
 console.log("C ", myArray); // C  [ 1, 5, true, 'puchu' ]
 console.log(myn2);  // [ 2, 3, 4 ]
 
-// slice does not manipulate original array and returns the elements excludung the element at the end index
+// slice does not manipulates original array and returns the elements excluding the element at the end index
 // splice manipulates the original array by taking out the portion of the array, elements that is in the range including start and end
