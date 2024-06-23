@@ -119,7 +119,7 @@ myArray.shift() // remove the start element // [ 1, 2, 3, 4, 5, true, 'puchu' ]
 
 
 // slice, splice:
-//----------------
+// ----------------
 console.log("A ", myArray); // A  [ 1, 2, 3, 4, 5, true, 'puchu' ]
 
 const myn1 = myArray.slice(1, 3)
